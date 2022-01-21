@@ -1,0 +1,214 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arley CarWash | Contacto</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--link rel="stylesheet" href="css/bootstrap-theme.css"-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+    <link rel="icon" type="image/png" href="img/Arley lavacar logo sin resplandor.png" />
+
+   
+
+</head>
+
+<body>
+
+
+    
+
+
+    <header>
+        <div class="container">
+            <div class="marca">
+                <a href="index.html"><img src="img/Arley lavacar logo con resplandor.png" alt="Logo"></a>
+                <span id="texto">
+                    <h1><span class="resaltado">Arley</span> CarWash</h1>
+                </span>
+
+
+
+
+                <nav id="nav_principal">
+                    <ul class="menu">
+
+                        <li><a href="index.html">Inicio | </a></li>
+                        <li><a href="servicios.html">Servicios | </a>
+                            <ul class="submenu">
+                                <li> <a href="interiores.html">Interiores</a></li>
+                                <li> <a href="exteriores.html">Exteriores</a></li>
+                                <li> <a href="cuero.html">Cuero</a></li>
+                                <li> <a href="otros.html">Otros</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="Nosotros.html">Nosotros | </a>
+                            <ul class="submenu">
+                                <li><a href="">Historia</a></li>
+                                <li><a href="ubicacion.html">Ubicación</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li><a href="galeria.html">Proyectos |</a></li>
+
+                        <li class="actual"><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="menu_bar">
+            <a href="#" class="boton"><img src="img/menu.png" alt="icono_menu">Menú</a>
+        </div>
+
+        <nav id="menu_lateral">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li> <a href="">Servicios</a></li>
+                
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="galeria.html">Proyectos</a></li>
+
+                <li class="actual"><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+
+
+
+
+
+
+    <!--div-- class="modal_wrap">
+        <div class="mensaje_modal">
+            <h3>Errores encontrados</h3>
+            <p>Ingrese un correo electrónico.</p>
+            <p>Escriba un nombre.</p>
+            <p>Ingrese la fecha de nacimiento.</p>
+            <p>Escriba un asunto.</p>
+            <p>Escriba un mensaje.</p>
+            <span id="btnClose">Cerrar</span>
+        </div>
+    </!--div-->
+
+
+
+    <div class="padding_superior"></div>
+
+   
+
+    <main class="contenedor-form">
+
+        <div class="formulario wrapFormulario">
+            <form action="php/enviar.php" method="post">
+                <h2>Contáctanos</h2>
+                <input id="correo" type="email" placeholder="Correo Electrónico*" name="email" required>
+                <input id="names" type="text" placeholder="Nombre completo*" name="name" required>
+                <h4>Nacimiento*</h4>
+                <input type="date" name="user_date" id="user_date" required />
+                <div id="result"></div>
+
+
+
+
+
+                <h4>Género</h4>
+                <input type="radio" name="genero" id="hombre" value="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="genero" id="mujer" value="mujer">
+                <label for="mujer">Mujer</label>
+
+
+
+
+                <div class="checkboxes">
+                    <h4>Grado Académico</h4>
+                    <input type="checkbox" name="checkbox1" id="checkbox1">
+                    <label for="checkbox1">Escuela</label>
+                    <input type="checkbox" name="checkbox2" id="checkbox2">
+                    <label for="checkbox2">Colegio</label>
+                    <input type="checkbox" name="checkbox3" id="checkbox3">
+                    <label for="checkbox3">Universidad</label>
+                </div>
+
+
+
+
+                <input id="asunto" type="text" placeholder="Asunto*" name="asunto" required>
+                <textarea id="msg" name="msg" id="" cols="30" rows="10" placeholder="Mensaje..." required></textarea>
+                <input id="btnSend" name="enviar" type="submit" value="Enviar correo">
+
+            </form>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!--?php
+                    include("correo.php");
+            ?-->
+
+
+        
+
+    </main>
+
+
+    <audio controls autoplay volume="0.1" preload="auto" style="display: none;">
+        <source
+          src="audio/Im Yours.mp3"
+          type="audio/mp3"
+        />
+    </audio>
+
+
+    <footer>
+        <div class="container">
+            <h3>Arleys Web Design&copy</h3>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/mainParaSlider.js"></script>
+
+
+    <script src="js/menuLateral.js"></script>
+
+
+
+    <script src="js/calcularFecha.js"></script>
+    <script src="js/validacionesForm.js"></script>
+</body>
+
+</html>

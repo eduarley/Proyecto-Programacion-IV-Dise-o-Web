@@ -1,0 +1,22 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="php/enviar.php">
+</head>
+
+<body>
+    <form action="php/enviar.php" method="post">
+        <h2>Contáctanos</h2>
+        <input type="email" placeholder="Correo Electrónico*" name="email" required>
+        <input type="text" placeholder="Nombre completo*" name="name" required>
+        <input type="text" placeholder="Asunto*" name="asunto" required>
+        <textarea name="msg" id="" cols="30" rows="10" placeholder="Mensaje..." required></textarea>
+        <input name="enviar" type="submit" value="Enviar correo">
+    </form>
+</body>
+
+</html>

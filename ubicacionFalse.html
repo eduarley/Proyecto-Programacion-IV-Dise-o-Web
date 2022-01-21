@@ -1,0 +1,351 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arley CarWash | Ubicación</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--link rel="stylesheet" href="css/bootstrap-theme.css"-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+    <link rel="icon" type="image/png" href="img/Arley lavacar logo sin resplandor.png" />
+
+    <!--para el slider"-->
+
+    <link rel="stylesheet" href="css/flexslider.css">
+
+
+
+
+
+    <!--script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD97-Vq49dq-XdKEjWXC3dQRj__h7ZAfwQ"
+        async defer>
+    </script-->
+
+
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAHQDXiczFnNRZcMrNG1XnHLg3RMSoFYEM" async defer>
+    </script>
+
+<!--script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBhV2px1aeJiV24iSJBUeWsqnvRnlLKtnA" async defer>
+    </script-->
+
+    
+
+
+
+
+
+
+
+
+<!--style>
+    html, body{
+      height:100%;
+      margin: 0px;
+    }
+    #googleMap{
+      width:100%;
+      height:100%;
+    }
+  </!--style>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script-- type="text/javascript">
+    function initialize() {
+    // Configuración del mapa
+    var mapProp = {
+     zoom: 3,
+    center: {lat: -34.6036844, lng: -58.381559100000004},
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+    };
+    // Agregando el mapa al tag de id googleMap
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+      
+    // Coordenada de la ruta (desde Misiones hasta Tierra del Fuego)
+    var flightPlanCoordinates = [
+      {lat: -27.4269255, lng: -55.94670759999997},
+      {lat: -34.6036844, lng: -58.381559100000004},
+      {lat: -43.2934246, lng: -65.11148179999998},
+      {lat: -54.8053998, lng: -68.32420609999997}
+    ];
+     
+    // Información de la ruta (coordenadas, color de línea, etc...)
+    var flightPath = new google.maps.Polyline({
+      path: flightPlanCoordinates,
+      geodesic: true,
+      strokeColor: '#FF0000',
+      strokeOpacity: 1.0,
+      strokeWeight: 2
+    });
+     
+    // Creando la ruta en el mapa
+    flightPath.setMap(map);
+    }
+      
+    // Inicializando el mapa cuando se carga la página
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script-->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="marca">
+                <a href="index.html"><img src="img/Arley lavacar logo con resplandor.png" alt="Logo"></a>
+                <span id="texto">
+                    <h1><span class="resaltado">Arley</span> CarWash</h1>
+                </span>
+
+
+
+
+                <nav id="nav_principal">
+                    <ul class="menu">
+
+                        <li><a href="index.html">Inicio | </a></li>
+                        <li><a href="servicios.html">Servicios | </a>
+                            <ul class="submenu">
+                                <li> <a href="interiores.html">Interiores</a></li>
+                                <li> <a href="exteriores.html">Exteriores</a></li>
+                                <li> <a href="cuero.html">Cuero</a></li>
+                                <li> <a href="otros.html">Otros</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="Nosotros.html">Nosotros | </a>
+                            <ul class="submenu">
+                                <li><a href="">Historia</a></li>
+                                <li class="actual"><a href="ubicacion.html">Ubicación</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li><a href="galeria.html">Proyectos |</a></li>
+
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="menu_bar">
+            <a href="#" class="boton"><img src="img/menu.png" alt="icono_menu">Menú</a>
+        </div>
+
+        <nav id="menu_lateral">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li> <a href="">Servicios</a></li>
+
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="galeria.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+    <div id="googleMap"></div>
+
+
+
+
+    <div class="padding_superior"></div>
+
+
+    <h2 style="color: #fff; font-size: 40px; text-align: center; ">Nuestra ubicación</h2>
+
+
+    <main style="height: 100%;">
+
+        <div id="map" style="height: 100%;"> </div>
+
+
+
+
+        <script type="text/javascript">
+            var divMapa = document.getElementById('map');
+            navigator.geolocation.getCurrentPosition(fn_ok, fn_mal);
+            
+            function fn_mal() {
+                alert('No se pudo obtener ubicación')
+            }
+
+
+            function fn_ok(respuesta) {
+                var lat = respuesta.coords.latitude;
+                var lon = respuesta.coords.longitude;
+
+                var gLatLonUsuario = new google.maps.LatLng(lat, lon);
+                var gLatLonLocal = new google.maps.LatLng(10.069296, -84.362446);
+                var objConfig = {
+                    zoom: 17,
+                    center: gLatLonLocal
+                }
+                var gMapa = new google.maps.Map(divMapa, objConfig);
+                var objConfigMarkerLocal = {
+                    position: gLatLonLocal,
+                    map: gMapa,
+                    title: "Arley CarWash",
+                    icon: 'img/Marker.ico'
+                }
+                var objConfigMarkerUsuario = {
+                    position: gLatLonUsuario,
+                    map: gMapa,
+                    title: "Usted está aquí"
+                }
+
+                var gMarkerLocal = new google.maps.Marker(objConfigMarkerLocal);
+                var gMarkerUsuario = new google.maps.Marker(objConfigMarkerUsuario);
+
+
+
+
+
+                //editado
+            // Coordenada de la ruta
+            var flightPlanCoordinates = [{
+                    lat: 10.069296,
+                    lng: -84.362446
+                },
+                {
+                    lat: lat,
+                    lng: lon
+                },
+                
+            ];
+
+            // Información de la ruta (coordenadas, color de línea, etc...)
+            var flightPath = new google.maps.Polyline({
+                path: flightPlanCoordinates,
+                geodesic: true,
+                strokeColor: '#FF0000',
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            // Creando la ruta en el mapa
+            flightPath.setMap(gMapa);
+
+
+
+
+
+/*
+
+var directionsService = new google.maps.DirectionsService();
+  var directionsRenderer = new google.maps.DirectionsRenderer();
+
+            var request = {
+                origin: gLatLonLocal,
+                destination: gLatLonUsuario,
+                travelMode: 'DRIVING'
+            };
+            directionsService.route(request, function (result, status) {
+                if (status == 'OK') {
+                    directionsRenderer.setDirections(result);
+                }
+            });
+
+
+
+*/
+
+            }
+
+
+
+            
+
+
+
+
+            
+
+            //fin editado
+        </script>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <h3>Arley´s Web Design&copy</h3>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/mainParaSlider.js"></script>
+
+
+
+    <script src="js/menuLateral.js"></script>
+</body>
+
+</html>
